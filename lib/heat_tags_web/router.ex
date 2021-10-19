@@ -7,6 +7,8 @@ defmodule HeatTagsWeb.Router do
 
   scope "/api", HeatTagsWeb do
     pipe_through :api
+
+    post "/message", MessagesController, :create
   end
 
   # Enables LiveDashboard only for development
